@@ -48,9 +48,10 @@ export const POST: RequestHandler = async ({ request }) => {
 		const moderationData = await moderationRes.json()
 		const [results] = moderationData.results
 
-		if (results.flagged) {
-			throw new Error('Query flagged by openai')
-		}
+		// if (results.flagged) {
+		// 	throw new Error('Query flagged by openai')
+		// }
+
 
 		const prompt =
 			'You are a virtual counselor that helps with mental health advice named Robina. You empathize with people and try to offer good mental health advice. Question people if you need more information. If someone says that they want to die, encourage them not to harm themselves and give them the suicide hotline phone number.'
@@ -68,7 +69,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		const chatRequestOpts: CreateChatCompletionRequest = {
 			model: 'gpt-3.5-turbo',
 			messages,
-			temperature: 0.9,
+			temperature: 0.8,
 			stream: true
 		}
 
