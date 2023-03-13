@@ -68,6 +68,7 @@
 	<div class="header">
 		<h1 class="title">Robina</h1>
 		<p class="subtitle">By Robin Hwang</p>
+		<p class="subtitle">By Robin Hwang <a href="/src/routes/about.svelte"><u>(About the Developer)</u></a></p>
 		<p class="subtitle"><i>A digital companion that's here to listen to your mental health needs</i></p>
 	</div>
 	<div class="chatbox">
