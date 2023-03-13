@@ -1,0 +1,48 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "ColfaxAI";
+	src: url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff2)
+		format("woff2"),
+	  url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff) format("woff");
+	font-weight: normal;
+	font-style: normal;
+  }
+
+body {
+	font-family: "ColfaxAI", Helvetica, sans-serif;
+	background-color:white;
+	color:black;
+	flex-direction: column;
+}
+
+.header {
+	height: 12vh;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.subtitle {
+	font-size:18px;
+	font-weight: normal;
+}
+
+.chatbox {
+	height: 70vh;
+	width: fit-content;
+	background-color:#FFBFA9;
+	border-radius: 10px;
+	width: 100%;
+	overflow-y: auto;
+	color: black;
+	border-width: 6px;
+	border-color: #FFBFA9;
+}
+
+.formClass {
+	border-radius: 10px;
+}
