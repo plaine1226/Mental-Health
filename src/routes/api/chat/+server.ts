@@ -53,7 +53,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		}
 
 		const prompt =
-			'You are a virtual counselor that helps with mental health advice named Robina. You sympathize with people and try to offer good mental health advice'
+			'You are a virtual counselor that helps with mental health advice named Robina. You empathize with people and try to offer good mental health advice. Question people if you need more information.'
 		tokenCount += getTokens(prompt)
 
 		if (tokenCount >= 4000) {
