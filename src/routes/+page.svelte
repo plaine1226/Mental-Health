@@ -72,7 +72,7 @@
 	</div>
 	<div class="chatbox">
 		<div class="flex flex-col gap-2">
-			<ChatMessage type="assistant" message="Hey there! My name is Robina, and I'll be your conselor for today. How can I assist your mental health?" />
+			<ChatMessage type="assistant" message="Hey there! My name is Robina, and I'll be your counselor for today. How can I assist your mental health?" />
 			{#each chatMessages as message}
 				<ChatMessage type={message.role} message={message.content} />
 			{/each}
